@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/urbidata/static/css/main.90595279.css",
+    "main.js": "/urbidata/static/js/main.4638711f.js",
+    "static/media/basis-grotesque-regular-pro.ttf": "/urbidata/static/media/basis-grotesque-regular-pro.3945be8feee7428a466c.ttf",
+    "static/media/basis-grotesque-medium-pro.ttf": "/urbidata/static/media/basis-grotesque-medium-pro.bfacd59890b4b3285534.ttf",
+    "static/media/basis-grotesque-bold-pro.ttf": "/urbidata/static/media/basis-grotesque-bold-pro.0c9e1769fc9152bda165.ttf",
+    "static/media/basis-grotesque-light-pro.ttf": "/urbidata/static/media/basis-grotesque-light-pro.56a091fac7d082b0347e.ttf",
+    "static/media/logo_urbidata.png": "/urbidata/static/media/logo_urbidata.db4c45f48136b07e977f.png",
+    "index.html": "/urbidata/index.html",
+    "main.90595279.css.map": "/urbidata/static/css/main.90595279.css.map",
+    "main.4638711f.js.map": "/urbidata/static/js/main.4638711f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90595279.css",
+    "static/js/main.4638711f.js"
+  ]
+}
