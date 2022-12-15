@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pikoro1234.github.io/urbidata",
+  "homepage": "https://pikoro1234.github.io/urbidata",
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
