@@ -22,8 +22,8 @@ const Navbar = () => {
 
                 <nav className="d-flex align-items-center">
                     <NavLink to="/urbidata" className="nav-link btn-generic me-2" aria-current="page">Localización</NavLink>
-                    <NavLink to="/Analisis" className="nav-link btn-generic me-2" aria-current="page">Análisis</NavLink>                    
-                    <NavLink to="/Avisos" className="nav-link btn-generic" aria-current="page">Avisos <i className='ms-1' data-feather="bell"></i> </NavLink>
+                    <NavLink to="/analisis" className="nav-link btn-generic me-2" aria-current="page">Análisis</NavLink>                    
+                    <NavLink to="/avisos" className="nav-link btn-generic" aria-current="page">Avisos <i className='ms-1' data-feather="bell"></i> </NavLink>
                 </nav>
                 
                 <div className="content-logo"><Link to="/"><img src={ImgLogo} alt="logo principal" className="logo"></img></Link></div>
