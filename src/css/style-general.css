@@ -1,0 +1,253 @@
+:root {
+
+    /* colores */
+    --color-primary:#f6f7f0;
+    --color-green:#1b3612;
+    --color-secundary:#a2a998;
+    --color-text:#c2cbba;
+
+    /* background */
+    --bg-primary:#f6f7f0;
+    --bg-secundary:#a2a998;
+    --bg-green:#1b3612;
+    --bg-green-dark:#11170c;
+    --bg-transparent:transparent;
+    --bg-error:#b5564a;
+
+    /* border */
+    --border-color-primary:#f6f7f8;
+    --border-color-secundary:#a2a998;
+    --border-bottom-complet:#a2a998;
+}
+
+*{
+    margin: 0;    
+}
+
+html body{
+    overflow: hidden!important;
+}
+
+@media (min-width: 992px) {
+
+    .bg-cover{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .content-dinamic-submenu,
+    .content-dinamic-submenu-ordenar{
+        width: 155px;
+        min-width: 155px;
+    }
+    .margin-negativo-dinamic-submenu-span{
+        margin-right: -151px;
+    }
+    .padding-rigth-0{
+        padding-right: 0px!important;
+    }
+    .padding-left-0{
+        padding-left: 0px!important;
+    }
+    .btn-floting-nav{
+        position: absolute;
+        top: -23px;
+        right: 0;
+        z-index: 1000;
+    }
+    .btn-floting-ordenar{
+        position: absolute;
+        top: -21px;
+        right: 0;
+        z-index: 1000;
+    }
+    .btn-absolute-flotante-cols{
+        position: absolute;
+        top: 4%;
+    }
+    .ocultar-icon{
+       display: none!important; 
+    }
+    html body{
+        background-color: var(--bg-primary);
+    }
+    .content-logo{
+        margin-left: -80px;
+        max-width: 170px;
+    }
+    .logo{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    .container-fluid{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .content-logo-flotante{
+        position: absolute;
+        top: 0;
+    }
+    .input-generic-green{
+        border-radius: 13px;
+        background-color: transparent !important;
+        color: var(--color-primary)!important;
+    }
+    .input-generic-green::placeholder{
+        color: var(--color-primary)!important;
+        opacity: .5;
+    }
+    .input-generic-green:focus {
+        border-color: var(--border-color-primary)!important;        
+        box-shadow: 0 0 0 0rem transparent!important;
+    }
+    .btn-generic-green{
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.5px;
+        border-color: var(--border-color-primary);
+        background-color: var(--bg-primary);
+        color: var(--color-green);
+        transition: .5s;
+    }
+    .btn-generic-green:hover{
+        background-color: transparent!important;
+        color: #f6f7f8!important;
+    }
+    .btn-standar{
+        padding: 10px 13px 10px 14px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.2px #a2a998;        
+    }
+    .btn-generic{
+        padding: 12px 11px 10px 15px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.2px var(--color-secundary);
+        background-color: var(--bg-primary);
+        color: var(--color-green);
+        transition: .5s;
+    }
+    .btn-enlace-style-none{
+        text-decoration: none;
+        color: var(--color-green); 
+    }
+    .btn-generic:hover,
+    .btn-generic:focus,
+    .btn-enlace-style-none:hover,
+    .btn-enlace-style-none:focus{
+        color: var(--color-secundary)
+    }
+    .btn-tabs-generic{
+        margin-bottom: 0px!important;
+        background: transparent!important;
+        border: none!important;
+        border-top-left-radius: 0rem!important;
+        border-top-right-radius: 0rem!important;
+        color: var(--color-text)!important;
+    }
+    .btn-tabs-generic.active{
+        color: var(--color-green)!important;
+    }
+    #accordionExample{
+        overflow-y: auto;
+        height: 75vh;
+    }
+    .acordion-box-style{
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.2px;        
+        border-color: var(--border-color-secundary)!important;
+        padding: .5rem !important;
+        transition: .5s;
+    }
+    .acordion-box-style.accordion-item:first-of-type{
+        border-top-left-radius: 13px!important;
+        border-top-right-radius: 13px!important;
+    }
+    .acordion-box-style.accordion-item:last-of-type{
+        border-bottom-left-radius: 13px!important;
+        border-bottom-right-radius: 13px!important;
+    }
+    .accordion-item .accordion-button:focus{
+        border-color: transparent!important; 
+        box-shadow: 0 0 0 .25rem transparent !important;        
+    }
+    .acordion-box-style.accordion-item .accordion-button:not(.collapsed){
+        border-color: transparent !important;
+        box-shadow: 0 0 0 .25rem transparent !important;
+        box-shadow: inset 0 -1px 0 rgba(0,0,0,.125) !important;
+    }
+    .accordion-button:not(.collapsed) {
+        color: var(--color-green);
+    }
+    .accordion-item:not(:first-of-type) {
+        border-top: solid 0.2px;
+        border-color: var(--border-color-secundary)!important;
+    }
+    .acordion-box-style.accordion-item .accordion-button::after{
+        display: none!important;
+    }
+    .accordion-item.bg-transparent.acordion-box-style:hover{
+        background-color: #edefe6!important;
+    }
+    .progress.progress-width{
+        width: 5rem;
+        height: 5px;
+        background-color: var(--bg-secundary)!important;
+    }
+    .contador-jardineras {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+    }
+
+
+
+
+    #myProgress {
+        position: relative;
+        width: 100%;
+        height: 5px;
+        background-color: var(--bg-secundary);
+    }
+      
+    #myBar {
+        position: absolute;
+        width: 1%;
+        height: 100%;
+        background-color: var(--bg-primary);
+    }
+
+
+    #map{ 
+        height: 100%; 
+        width: 100%; 
+    }
+    .leaflet-container{
+        height: 89vh;
+        width: 100%;
+    }
+    .btn-toggle-expanded-mapa{
+        position: absolute;
+        z-index: 10000;
+        top: 11px;
+        left: 55px;
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        cursor: pointer;
+        border: solid 0.2px;
+        border-color: var(--border-color-secundary) !important;
+    }
+    .btn-toggle-expanded-mapa:hover{
+        background-color: #f4f4f4;
+    }
+}

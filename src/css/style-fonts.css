@@ -1,0 +1,66 @@
+/*
+==============================
+Font Family
+==============================
+*/
+@font-face {
+    font-family: 'Basis';
+    src: url(fonts/basis-grotesque-light-pro.ttf);
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family: 'Basis';
+    src: url(fonts/basis-grotesque-regular-pro.ttf);
+    font-weight: 400;
+}
+  
+@font-face {
+    font-family: 'Basis';
+    src: url(fonts/basis-grotesque-medium-pro.ttf);
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family: 'Basis';
+    src: url(fonts/basis-grotesque-bold-pro.ttf);
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Basis', sans-serif;
+    color: var(--color-green);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    font-family: 'Basis'!important;    
+}
+
+p,
+a,
+input,
+textarea,
+ul li,
+ol li,
+span,
+table,
+table tr,
+table tr td {
+    font-family: 'Basis'!important;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 1.3em;    
+}
+
+.ff-basis{
+    font-family: 'Basis'!important;
+}
