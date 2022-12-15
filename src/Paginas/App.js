@@ -34,7 +34,7 @@ function App() {
           <Route path="/mi-cuenta" element={(auth) ? <MiCuenta /> : <Precarga />}></Route>
           <Route path="/avisos" element={(auth) ? <Avisos /> : <Precarga />}></Route>          
           <Route path="/analisis" element={(auth) ? <Analisis /> : <Precarga />}></Route>
-          <Route path="/" element={(auth) ? <Home /> : <Precarga />}></Route>
+          <Route path="/urbidata" element={(auth) ? <Home /> : <Precarga />}></Route>
         </Routes>
 
       </Router>        
