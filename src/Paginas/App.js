@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import {BrowserRouter as Router, HashRouter, Route, Routes} from "react-router-dom";
 import Precarga from './Precarga';
 import ResetPassword from './ResetPassword';
 import Home from './Home';
@@ -18,7 +18,7 @@ function App() {
 
   return ( 
     <>      
-      <Router> 
+      <HashRouter> 
 
         {/* {(auth) &&  <Navbar />} */}
 
@@ -37,7 +37,7 @@ function App() {
           <Route path="/urbidata" element={(auth) ? <Home /> : <Precarga />}></Route>
         </Routes>
 
-      </Router>        
+      </HashRouter>        
     </>   
   );
 }

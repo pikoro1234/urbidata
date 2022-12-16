@@ -1,0 +1,254 @@
+[
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "JORGEINTRAMUNDANA",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "JORGEINTRAMUNDANA",
+    "id": "1472",
+    "latitud": "0",
+    "longitud": "0"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0009",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 9",
+    "id": "1473",
+    "latitud": "41.628247",
+    "longitud": "2.338379"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0008",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 8",
+    "id": "1474",
+    "latitud": "41.628247",
+    "longitud": "2.338379"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0007",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 7",
+    "id": "1475",
+    "latitud": "41.628249",
+    "longitud": "2.338362"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0006",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 6",
+    "id": "1476",
+    "latitud": "41.627863",
+    "longitud": "2.337498"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0005",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jard 05",
+    "id": "1477",
+    "latitud": "41.627863",
+    "longitud": "2.337498"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0004",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Planter 04 (Telefonica)",
+    "id": "1478",
+    "latitud": "41.627514593502",
+    "longitud": "2.3385354366516"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0003",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Planter 03 (Telefonica)",
+    "id": "1479",
+    "latitud": "41.627514593502",
+    "longitud": "2.3385354366516"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0002",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Planter 02 (Santa Cole)",
+    "id": "1480",
+    "latitud": "41.628244588105",
+    "longitud": "2.3378317331719"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0001",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Planter 01 (Football)",
+    "id": "1481",
+    "latitud": "41.627834915472",
+    "longitud": "2.337946761601"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "testtt",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "sss",
+    "id": "1482",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "test",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "srse",
+    "id": "1483",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "planter02",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "planter02",
+    "id": "1484",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "planter01",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "planter01",
+    "id": "1485",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "testinf",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "dsdf",
+    "id": "1486",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "P2",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "AG2",
+    "id": "1487",
+    "latitud": "41.983152",
+    "longitud": "2.824775"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "P1",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "AG1",
+    "id": "1488",
+    "latitud": "41.983133",
+    "longitud": "2.824752"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "JORGENEARBYSENSOR",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "JORGENEARBYSENSOR",
+    "id": "1489",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "planter03",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "planter03",
+    "id": "1490",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J008",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "test jardinera",
+    "id": "1491",
+    "latitud": "24.972675780582",
+    "longitud": "6.5832751144771"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "jardineraTEST",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "jardineraTEST",
+    "id": "1492",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "Jardinera_vfabrica",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Microcontrolador reciÃ©n salido de fabrica",
+    "id": "1493",
+    "latitud": "41.628252",
+    "longitud": "2.338341"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "planter010",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "planter010",
+    "id": "1494",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "dsfsdfsdfdsff",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "sdf",
+    "id": "1495",
+    "latitud": "0",
+    "longitud": "0"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0010",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 10",
+    "id": "1496",
+    "latitud": "41.628251",
+    "longitud": "2.33826"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0011",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera 11",
+    "id": "1497",
+    "latitud": "41.628245",
+    "longitud": "2.338215"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J0100",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "NuevaJ0100",
+    "id": "1498",
+    "latitud": "41.62807008",
+    "longitud": "2.33791486"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "J_FactorySetUp",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "Jardinera Setup Factory",
+    "id": "1499",
+    "latitud": "41.628278",
+    "longitud": "2.338225"
+  }
+]

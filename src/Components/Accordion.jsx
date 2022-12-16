@@ -1,18 +1,24 @@
 import AccordionItem from "./AccordionItem";
 import TriggerFiltros from "./TriggerFiltros";  
+import { useEffect } from "react";
 
 const Accordion = () => {
 
-    // const getAllJardineras = async () =>{
+    const getAllJardineras = async () =>{
 
-    //     const data = await fetch(`http://192.168.2.13/nbs/CustomApp/nbs/app/ApiJardineras`)
-
-    //     const pokeThis = await data.json()
+        const data = await fetch('../../jardineras.json', {
+            headers : { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            }
+        })
+        const pokeThis = await data.json()
+        console.log(pokeThis)
+    }
         
-    //     console.log(pokeThis)
-    // }
-
-    // getAllJardineras()
+    useEffect(()=>{
+        getAllJardineras()
+    },[])
 
     const accordionTemp = [
         {
