@@ -18,7 +18,7 @@ function App() {
 
   return ( 
     <>      
-      <HashRouter> 
+      <Router> 
 
         {/* {(auth) &&  <Navbar />} */}
 
@@ -37,7 +37,7 @@ function App() {
           <Route path="/urbidata" element={(auth) ? <Home /> : <Precarga />}></Route>
         </Routes>
 
-      </HashRouter>        
+      </Router>        
     </>   
   );
 }
