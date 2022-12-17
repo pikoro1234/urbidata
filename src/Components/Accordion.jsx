@@ -1,28 +1,24 @@
 import AccordionItem from "./AccordionItem";
 import TriggerFiltros from "./TriggerFiltros";  
 import { useEffect, useState } from "react";
-
+import getAllJardineras from "../Servicios/ServJardineras"
 const Accordion = () => {
 
+    // generamos las varibles de estado para el manejo de las jardineras
     const [jardinera, setJardinera] = useState([])
 
-    const getAllJardineras = async () =>{
+    // en una funcion asincrona recuperamos las jardineras del servicio y seteamos el estado de las jardineras
+    async function initJardineras() {
+        const data = await getAllJardineras()
 
-        const data = await fetch('./jardineras.json', {
-            headers : { 
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            }
-        })
-        const jardinerasAll = await data.json()
-
-        setJardinera(jardinerasAll)
-        console.log(jardinerasAll)
+        console.log(data)
+        setJardinera(data);
     }
-        
-    useEffect(()=>{
-        getAllJardineras()
-    },[])
+
+    // inicialisamos las jardineras al momento de ejecutarse el effect
+    useEffect(() => {
+        initJardineras()     
+    },[]);
 
     return ( 
         <>
