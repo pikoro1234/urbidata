@@ -8,7 +8,7 @@ const Accordion = () => {
 
     const getAllJardineras = async () =>{
 
-        const data = await fetch('../../jardineras.json', {
+        const data = await fetch('./jardineras.json', {
             headers : { 
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
