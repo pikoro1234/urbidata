@@ -29,7 +29,6 @@ const Navbar = () => {
                 <div className="content-logo"><Link to="/"><img src={ImgLogo} alt="logo principal" className="logo"></img></Link></div>
 
                 <div className="content-cerrar-session position-relative">
-
                     <button onClick={() => cambioTamanhoMenu()} className="btn-generic py-2 px-3 btn-menu-flotante btn-floting-nav btn-desple-menu-flotante">
                         <span className='span-margin'>N</span>
                         <ul className='content-dinamic-submenu list-unstyled ocultar-icon'>
@@ -39,9 +38,8 @@ const Navbar = () => {
                             <li className='d-flex align-items-center justify-content-start'><span className='btn-enlace-style-none'>Cerrar sesión</span></li>
                         </ul>
                     </button>
-
                 </div>
-
+                
             </div>
         </header>
     );

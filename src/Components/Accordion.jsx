@@ -1,8 +1,10 @@
 import AccordionItem from "./AccordionItem";
 import TriggerFiltros from "./TriggerFiltros";  
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Accordion = () => {
+
+    const [jardinera, setJardinera] = useState([])
 
     const getAllJardineras = async () =>{
 
@@ -12,31 +14,15 @@ const Accordion = () => {
                 'Accept': 'application/json'
             }
         })
-        const pokeThis = await data.json()
-        console.log(pokeThis)
+        const jardinerasAll = await data.json()
+
+        setJardinera(jardinerasAll)
+        console.log(jardinerasAll)
     }
         
     useEffect(()=>{
         getAllJardineras()
     },[])
-
-    const accordionTemp = [
-        {
-            'id':'headingUno',
-            'class':'#collapseUno',
-            'idCollapse':'collapseUno'
-        },
-        {
-            'id':'headingDos',
-            'class':'#collapseDos',
-            'idCollapse':'collapseDos'
-        },
-        {
-            'id':'headingTres',
-            'class':'#collapseTres',
-            'idCollapse':'collapseTres'
-        }
-    ]
 
     return ( 
         <>
@@ -44,15 +30,14 @@ const Accordion = () => {
                       
             <div className="accordion" id="accordionExample">
                 { 
-                    accordionTemp.map( (item, key) =>(
-
+                    jardinera.map((item, key) => (                    
                         <div className="accordion-item bg-transparent acordion-box-style mt-3" key={key}> 
                             <div className="d-flex align-items-center">
                                 <input type="checkbox" name=""/>
-                                <button  id={item.id} className="accordion-button bg-transparent px-2 py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target={item.class} aria-expanded="false" aria-controls={item.idCollapse}>
+                                <button className="accordion-button bg-transparent px-2 py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target={'#'+item.id_jardinera} aria-expanded="false" aria-controls={item.id_jardinera}>
                                     <div className="d-flex align-items-center flex-wrap justify-content-between">
                                         <div className="top-title d-flex align-items-center">
-                                            <span className="">J0004</span><div className="separator mx-1">/</div><span className="">Ayto. De Barcelona</span><div className="separator mx-1">/</div><span className="">Sants-Montjuïc</span>
+                                            <span className="">{item.descripcion}</span><div className="separator mx-1">/</div><span className="">{item.nombre_empresa}</span><div className="separator mx-1">/</div><span className="">Sants-Montjuïc</span>
                                         </div>
                                         <div className="bottom-title d-flex align-items-center">                                         
                                             <span className="">Pyrus Calleriana Chanticleer, Alnus cordata</span><div className="separator mx-1">/</div><span className="">Último riego: <span className="fecha-acordion">2022-02-10 22:05</span></span>
@@ -61,7 +46,7 @@ const Accordion = () => {
                                 </button>
                                 <p className="mb-0">C</p>
                             </div>                
-                            <div id={item.idCollapse} className="accordion-collapse collapse" aria-labelledby={item.id} data-bs-parent="#accordionExample">
+                            <div id={item.id_jardinera} className="accordion-collapse collapse" aria-labelledby={item.id_jardinera} data-bs-parent="#accordionExample">
                                 <div className="accordion-body px-3">
                                     <div className="body-accordion d-flex align-items-center justify-content-between">
                                         <table>

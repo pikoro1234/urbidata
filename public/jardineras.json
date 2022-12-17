@@ -1,4 +1,22 @@
-[
+[  
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "otraJardinera",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "otro test de jardinera",
+    "id": "2",
+    "latitud": "0",
+    "longitud": "0"
+  },
+  {
+    "statusPlanter": "si",
+    "id_jardinera": "unaMas",
+    "nombre_empresa": "sin empresa",
+    "descripcion": "una jardinera mas",
+    "id": "1",
+    "latitud": "0",
+    "longitud": "0"
+  },
   {
     "statusPlanter": "si",
     "id_jardinera": "JORGEINTRAMUNDANA",
