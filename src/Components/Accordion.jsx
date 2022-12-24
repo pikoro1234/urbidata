@@ -11,7 +11,7 @@ const Accordion = () => {
     async function initJardineras() {
         const data = await getAllJardineras()
 
-        console.log(data)
+        //console.log(data)
         setJardinera(data);
     }
 

@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 const StyleProgress = styled.div`
 width: ${ props => props.valueWidth ? props.valueWidth : 0 }%;
-background: ${ props => props.valueWidth <= 50 ? '#b5564a' : '#223517' }
-`
+background: ${ props => props.valueWidth <= 50 ? '#b5564a' : '#223517' }`
 
 const AccordionItem = (props) => {
     return ( 
