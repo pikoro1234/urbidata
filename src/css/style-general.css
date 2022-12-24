@@ -61,12 +61,6 @@ html body{
     .padding-left-0{
         padding-left: 0px!important;
     }
-    /* .btn-floting-ordenar{
-        position: absolute;
-        top: -21px;
-        right: 0;
-        z-index: 1000;
-    } */
     .btn-absolute-flotante-cols{
         position: absolute;
         top: 4%;

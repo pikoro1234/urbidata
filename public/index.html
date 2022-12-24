@@ -45,11 +45,13 @@
             document.querySelector('.spanNavbar').classList.remove('margin-negativo-dinamic-submenu-span') 
           }
 
-          if (document.querySelectorAll('.btn-desple-menu-flotante')[1].children[0].classList[0] === 'spanOrdenar') {
-            document.querySelector('.ulContentOrdenar').classList.add('ocultar-icon')
-            document.querySelector('.content-ordenar .btn-desple-menu-flotante').classList.remove('menu-desplegado-ordenar')
-            document.querySelector('.spanOrdenar').classList.remove('margin-negativo-dinamic-ordenar-span') 
-          }        
+          if(document.querySelectorAll('.btn-desple-menu-flotante')[1] !== undefined){
+            if (document.querySelectorAll('.btn-desple-menu-flotante')[1].children[0].classList[0] === 'spanOrdenar') {
+              document.querySelector('.ulContentOrdenar').classList.add('ocultar-icon')
+              document.querySelector('.content-ordenar .btn-desple-menu-flotante').classList.remove('menu-desplegado-ordenar')
+              document.querySelector('.spanOrdenar').classList.remove('margin-negativo-dinamic-ordenar-span') 
+            }        
+          }
         }
       });
     </script>
