@@ -5,6 +5,7 @@ import BotonNavbarDinamic from './BotonNavbarDinamic';
 
 const Navbar = () => {
 
+    //pasamos como props los enlaces o elementos que tendra el boton
     let propsEnlaces = [
         {
             'text' : 'Gestionar perfiles',
@@ -41,7 +42,7 @@ const Navbar = () => {
                 <div className="content-logo"><Link to="/"><img src={ImgLogo} alt="logo principal" className="logo"></img></Link></div>
 
                 <div className="content-cerrar-session position-relative">                    
-                    <BotonNavbarDinamic props={propsEnlaces} />
+                    <BotonNavbarDinamic props={propsEnlaces} tipoButton='navBar' textBtn='N' ulType="ulContentNavbar content-dinamic-submenu list-unstyled ocultar-icon" spanType="spanNavbar" />
                 </div>                
             </div>
         </header>
