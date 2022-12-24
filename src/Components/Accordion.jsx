@@ -9,9 +9,7 @@ const Accordion = () => {
 
     // en una funcion asincrona recuperamos las jardineras del servicio y seteamos el estado de las jardineras
     async function initJardineras() {
-        const data = await getAllJardineras()
-
-        //console.log(data)
+        const data = await getAllJardineras()        
         setJardinera(data);
     }
 

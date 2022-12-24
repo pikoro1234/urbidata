@@ -17,6 +17,8 @@ const Mapa = () => {
     // generamos las varibles de estado para el manejo de las jardineras
     const [jardinera, setJardinera] = useState([])
 
+    const [centerMapa, setCenterMapa] = useState([-16.290154, -63.588653])
+
     // en una funcion asincrona recuperamos las jardineras del servicio y seteamos el estado de las jardineras
     async function initJardineras() {
         const data = await getAllJardineras()
@@ -25,20 +27,37 @@ const Mapa = () => {
 
     // inicialisamos las jardineras al momento de ejecutarse el effect
     useEffect(() => {
-        initJardineras()     
+        initJardineras()             
     }, []);
+
+    const changeDimensionMapa = () => {              
+
+        setCenterMapa([41.3927755, 2.0701489])
+        
+        console.log()
+        let colMapa = document.querySelector('.col-mapa')
+        let colAcordion = document.querySelector('.col-accordion')
+        
+        colMapa.style.width = '100%'
+        colAcordion.style.width = '0%'
+        colAcordion.classList.add('coultar-icon')
+        colAcordion.classList.remove('w-50')
+    }
     
     return ( 
-        <MapContainer fullscreenControl={true} center={[41.3748878, 2.118446]} zoom={13} scrollWheelZoom={false}>
-            <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-            {
-                jardinera.map((item, key) => ( 
-                    <Marker position={[item.latitud, item.longitud]} key={key}>
-                        <Popup>{item.id_jardinera} <br /> Easily customizable.</Popup>
-                    </Marker>            
-                ))
-            }
-        </MapContainer>
+        <>
+            <div onClick={()=> changeDimensionMapa()} className="btn-toggle-expanded-mapa px-2 py-2">P</div>
+            <MapContainer fullscreenControl={true} center={centerMapa} zoom={13} scrollWheelZoom={true}>
+                <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                {
+                    jardinera.map((item, key) => ( 
+                        <Marker position={[item.latitud, item.longitud]} key={key}>
+                            <Popup>{item.id_jardinera} <br /> Easily customizable.</Popup>
+                        </Marker>            
+                    ))
+                }                                
+            </MapContainer>
+        </>
     );
 }
  

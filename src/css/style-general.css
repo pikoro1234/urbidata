@@ -227,6 +227,10 @@ html body{
         height: 89vh;
         width: 100%;
     }
+    .col-accordion,
+    .col-mapa{
+        width: 50%;
+    }   
     .btn-toggle-expanded-mapa{
         position: absolute;
         z-index: 10000;
