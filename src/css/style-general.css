@@ -30,6 +30,12 @@ html body{
 
 @media (min-width: 992px) {
 
+    html body{
+        background-color: var(--bg-primary);
+    }
+    .ocultar-icon{
+        display: none!important; 
+    }
     .bg-cover{
         background-size: cover;
         background-repeat: no-repeat;
@@ -64,12 +70,6 @@ html body{
     .btn-absolute-flotante-cols{
         position: absolute;
         top: 4%;
-    }
-    .ocultar-icon{
-       display: none!important; 
-    }
-    html body{
-        background-color: var(--bg-primary);
     }
     .content-logo{
         margin-left: -80px;
@@ -150,6 +150,8 @@ html body{
     .btn-tabs-generic.active{
         color: var(--color-green)!important;
     }
+
+    /* acordion */
     #accordionExample{
         overflow-y: auto;
         height: 75vh;
@@ -198,8 +200,8 @@ html body{
         background-color: var(--bg-secundary)!important;
     }
     .contador-jardineras {
-        position: absolute;
-        bottom: 0;
+        position: sticky;
+        bottom: 0px;
         left: 0;
         right: 0;
         z-index: 100;
@@ -209,8 +211,7 @@ html body{
         width: 100%;
         height: 5px;
         background-color: var(--bg-secundary);
-    }
-      
+    }      
     #myBar {
         position: absolute;
         width: 1%;
@@ -218,19 +219,15 @@ html body{
         background-color: var(--bg-primary);
     }
 
-
+    /*mapa*/
     #map{ 
         height: 100%; 
         width: 100%; 
     }
     .leaflet-container{
-        height: 89vh;
-        width: 100%;
-    }
-    .col-accordion,
-    .col-mapa{
-        width: 50%;
-    }   
+        height: 100vh;
+        width: 100vw;
+    }  
     .btn-toggle-expanded-mapa{
         position: absolute;
         z-index: 10000;
