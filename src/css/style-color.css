@@ -11,6 +11,9 @@
 .color-text{
     color: var(--color-text)!important;
 }
+.color-tomato{
+    color: var(--color-tomato)!important;
+}
 
 /* background */
 .bg-primary{

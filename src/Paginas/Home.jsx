@@ -27,7 +27,7 @@ const Home = () => {
             <div className="container-fluid">
                 <div className="row">                    
                     <div className="col-lg-7 position-relative col-accordion">
-                        <Accordion jardineras={jardinera } />
+                        <Accordion jardineras={jardinera } accordion="jardineras" />
                         <AccordionContadorItems cantidad={jardinera.length} textCantidad="jardineras" />
                     </div>
                     <div className="col-lg-5 ps-1 padding-rigth-0 col-mapa">

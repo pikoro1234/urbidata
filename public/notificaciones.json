@@ -1,23 +1,32 @@
 [  
-  {    
+  {  
+    "numero_ticket": "0001",
     "id_jardinera": "unaMas",
+    "empresa": "Empresa 1",
     "tipo_aviso": "Aviso 1",
     "prioridad": "prioridad alta",
     "latitud": "41.628247",
-    "longitud": "2.338379"
+    "longitud": "2.338379",
+    "fecha": "2022-11-10 11:30"
   },
-  {    
+  {  
+    "numero_ticket": "0002",  
     "id_jardinera": "JORGEINTRAMUNDANA",
+    "empresa": "Empresa 2",
     "tipo_aviso": "Aviso 2",
     "prioridad": "prioridad media",    
     "latitud": "41.628247",
-    "longitud": "2.338379"
+    "longitud": "2.338379",
+    "fecha": "2022-11-11 12:30"
   },
-  {    
+  {  
+    "numero_ticket": "0003",  
     "id_jardinera": "J0009",
+    "empresa": "Empresa 3",
     "tipo_aviso": "Aviso 3",
     "prioridad": "prioridad baja",
     "latitud": "41.628247",
-    "longitud": "2.338379"
+    "longitud": "2.338379",
+    "fecha": "2022-11-12 13:30"
   }
 ]
