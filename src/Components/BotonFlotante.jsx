@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const BotonFlotante = (props) => {
     return ( 
         <>
-            <Link to={props.enlace} className='btn-absolute-flotante-cols'>{props.texto}</Link>
+            <Link to={props.enlace} className='btn-absolute-flotante-cols btn-flotante-portadas'>{props.texto}</Link>
         </>
     );
 }

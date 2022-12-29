@@ -119,7 +119,7 @@ html body{
         padding: 10px 13px 10px 14px;
         border-radius: 13px;
         box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
-        border: solid 0.2px #a2a998;        
+        border: solid 0.2px var(--color-secundary);        
     }
     .btn-generic{
         padding: 12px 11px 10px 15px;
@@ -128,6 +128,7 @@ html body{
         border: solid 0.2px var(--color-secundary);
         background-color: var(--bg-primary);
         color: var(--color-green);
+        text-decoration: none;
         transition: .5s;
     }
     .btn-enlace-style-none{
@@ -150,6 +151,26 @@ html body{
     }
     .btn-tabs-generic.active{
         color: var(--color-green)!important;
+    }
+    .btn-flotante-portadas{
+        padding: 11px 18px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.2px #223517;
+        background-color: #172617;
+        text-decoration: none;
+        color: var(--color-primary);
+        transition: .5s;
+    }
+    .btn-flotante-portadas:hover{
+        color: var(--color-secundary);   
+    }
+    .btn-formulario-crear-users{
+        padding: 10px;
+        border-radius: 13px;
+        box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.11);
+        border: solid 0.2px var(--color-secundary);
+        background-color: var(--bg-primary);
     }
 
     /* acordion */

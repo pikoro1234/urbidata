@@ -10,9 +10,9 @@ const PortadaCrearPerfil = () => {
                     <BotonFlotante enlace="/perfiles" texto="Atrás" />
                     <div className="content-card">
                         <h1 className="mb-5">Crea un nuevo perfil<br/>de Urbidata</h1>
-                        <p className="">En esta sección podrás crear perfiles nuevos que interactúen<br/> con vuestras jardineras. Estos usuarios tendrán acceso a<br/> información pertinente al estado de las jardineras, su localización<br/> y análisis detallado de su rendimiento.</p>
+                        <p className="mb-5">En esta sección podrás crear perfiles nuevos que interactúen<br/> con vuestras jardineras. Estos usuarios tendrán acceso a<br/> información pertinente al estado de las jardineras, su localización<br/> y análisis detallado de su rendimiento.</p>
                         
-                        <Link to="/crear-perfiles" className=''>Empezar</Link>
+                        <Link to="/crear-perfiles" className='btn-generic'>Empezar</Link>
                     </div>
                 </div>
                 <div className="col-lg-6 col-12 bg-fondo-relleno bg-cover"></div>

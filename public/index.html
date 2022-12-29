@@ -17,7 +17,7 @@
     <title>Urbidata</title>
   </head>
   <body>             
-    <div id="root"></div>
+    <div id="root" class="vh-100"></div>
     <!-- TEMPORAL -->
     <style>
       .feather {
@@ -37,20 +37,22 @@
 
       //ejecutamos funcion para que se esconda el boton al clickar fuera del boton
       document.addEventListener('mouseup', function(e) {
-        var container = document.querySelector('.btn-desple-menu-flotante');               
-        if (!container.contains(e.target)) {
-          if (document.querySelectorAll('.btn-desple-menu-flotante')[0].children[0].classList[0] === 'spanNavbar') {
-            document.querySelector('.ulContentNavbar').classList.add('ocultar-icon')
-            document.querySelector('.content-cerrar-session .btn-desple-menu-flotante').classList.remove('menu-desplegado-navbar')
-            document.querySelector('.spanNavbar').classList.remove('margin-negativo-dinamic-submenu-span') 
-          }
+        if (document.querySelector('.btn-desple-menu-flotante') != undefined) {                  
+          var container = document.querySelector('.btn-desple-menu-flotante');               
+          if (!container.contains(e.target)) {
+            if (document.querySelectorAll('.btn-desple-menu-flotante')[0].children[0].classList[0] === 'spanNavbar') {
+              document.querySelector('.ulContentNavbar').classList.add('ocultar-icon')
+              document.querySelector('.content-cerrar-session .btn-desple-menu-flotante').classList.remove('menu-desplegado-navbar')
+              document.querySelector('.spanNavbar').classList.remove('margin-negativo-dinamic-submenu-span') 
+            }
 
-          if(document.querySelectorAll('.btn-desple-menu-flotante')[1] !== undefined){
-            if (document.querySelectorAll('.btn-desple-menu-flotante')[1].children[0].classList[0] === 'spanOrdenar') {
-              document.querySelector('.ulContentOrdenar').classList.add('ocultar-icon')
-              document.querySelector('.content-ordenar .btn-desple-menu-flotante').classList.remove('menu-desplegado-ordenar')
-              document.querySelector('.spanOrdenar').classList.remove('margin-negativo-dinamic-ordenar-span') 
-            }        
+            if(document.querySelectorAll('.btn-desple-menu-flotante')[1] !== undefined){
+              if (document.querySelectorAll('.btn-desple-menu-flotante')[1].children[0].classList[0] === 'spanOrdenar') {
+                document.querySelector('.ulContentOrdenar').classList.add('ocultar-icon')
+                document.querySelector('.content-ordenar .btn-desple-menu-flotante').classList.remove('menu-desplegado-ordenar')
+                document.querySelector('.spanOrdenar').classList.remove('margin-negativo-dinamic-ordenar-span') 
+              }        
+            }
           }
         }
       });
