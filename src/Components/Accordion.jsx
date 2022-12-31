@@ -1,18 +1,58 @@
 import AccordionItem from "./AccordionItem";
-import TriggerFiltros from "./TriggerFiltros";  
-const Accordion = (props) => {
+import TriggerFiltros from "./TriggerFiltros"; 
+import L from 'leaflet'; 
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
 
+// const changeUbicacionMap = () =>{
+//     const map = useMap()
+
+//     map.flyTo([-17.7574439,-63.2918286],13)
+//     return null
+// }
+
+
+
+// const changeUbicacionMap = (latitud, longitud) => {
+    
+//     let map = L.map('map')
+
+//     map.invalidateSize();
+
+//     let latlng = L.latLng(-17.7574439, -63.2918286);
+
+//     //map.flyTo([-17.7574439, -63.2918286], 15);
+//     map.setView(latlng, map.getZoom());    
+
+//     //document.querySelector('')
+        
+//     // console.log("cambiamos la ubicacion " + latitud + " - " + longitud)
+    
+//     // setPosition([latitud, longitud]);
+
+//     // L.flyTo([latitud, longitud], L.getZoom());
+
+    
+//     //const map = useMap();
+//     //console.log(Marker);
+//     //console.log('map center:', map.getCenter())
+//     //map.setView([latitud, longitud], 13);
+//     return null;
+// }
+
+const Accordion = (props) => {
+    
     return ( 
         <>
             <TriggerFiltros />  
                       
             <div className="accordion" id="accordionExample">
-                { 
+                {                     
                     props.jardineras.map((item, key) => (                    
                         <div className="accordion-item bg-transparent acordion-box-style mt-3" key={key}> 
                             {props.accordion === "jardineras" ?
                                 <div className="d-flex align-items-center">
-                                    <input type="checkbox" name=""/>
+                                    <input type="checkbox" name="" />
+                                    {/* onClick={()=> changeUbicacionMap(item.latitud, item.longitud)} */}
                                     <button className="accordion-button bg-transparent px-2 py-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target={'#'+item.id_jardinera} aria-expanded="false" aria-controls={item.id_jardinera}>
                                         <div className="d-flex align-items-center flex-wrap justify-content-between">
                                             <div className="top-title d-flex align-items-center">

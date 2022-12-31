@@ -13,7 +13,9 @@ const Home = () => {
     // en una funcion asincrona recuperamos las jardineras del servicio y seteamos el estado de las jardineras
     async function initJardineras() {
         const data = await getAllJardineras()
-        setJardinera(data);        
+        setJardinera(data);  
+        
+        console.log(data);
     }
     
     // inicialisamos las jardineras al momento de ejecutarse el effect

@@ -10,6 +10,7 @@ import Perfiles from './Perfiles';
 import ServicioTecnico from './ServicioTecnico';
 import PortadaCrearPerfil from './PortadaCrearPerfil';
 import CrearPerfiles from './CrearPerfiles';
+import JsCustom from '../js/custom'
 
 
 function App() {
