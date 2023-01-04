@@ -1,6 +1,5 @@
 import AccordionItem from "./AccordionItem";
 import TriggerFiltros from "./TriggerFiltros"; 
-import L from 'leaflet'; 
 
 const Accordion = (props) => {
         

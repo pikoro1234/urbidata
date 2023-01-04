@@ -10,9 +10,11 @@ const cambioTamanhoMenu = (tipoButton) => {
         let menuFlotante = document.querySelector('.ulContentNavbar')
         let btnElement = document.querySelector('.content-cerrar-session .btn-desple-menu-flotante')
         let btnFlotante = document.querySelector('.spanNavbar')        
-        menuFlotante.classList.toggle('ocultar-icon') 
-        btnElement.classList.toggle('menu-desplegado-navbar')
-        btnFlotante.classList.toggle('margin-negativo-dinamic-submenu-span')    
+        menuFlotante.classList.contains('ocultar-icon') ? menuFlotante.classList.remove('ocultar-icon') : menuFlotante.classList.add('ocultar-icon')
+        btnElement.classList.contains('menu-desplegado-navbar') ? btnElement.classList.remove('menu-desplegado-navbar') : btnElement.classList.add('menu-desplegado-navbar')
+        btnFlotante.classList.contains('margin-negativo-dinamic-submenu-span') ? btnFlotante.classList.remove('margin-negativo-dinamic-submenu-span') : btnFlotante.classList.add('margin-negativo-dinamic-submenu-span')        
+
+        menuFlotante.classList.contains('ocultar-icon') ? document.getElementById('root').classList.remove('abrimos-menu') : document.getElementById('root').classList.add('abrimos-menu')
 
         setTimeout(() => {
             if (btnElement.classList.contains('menu-desplegado-navbar')) {
@@ -27,9 +29,11 @@ const cambioTamanhoMenu = (tipoButton) => {
         let menuFlotante = document.querySelector('.ulContentOrdenar')
         let btnElement = document.querySelector('.content-ordenar .btn-desple-menu-flotante')
         let btnFlotante = document.querySelector('.spanOrdenar')         
-        menuFlotante.classList.toggle('ocultar-icon')
-        btnElement.classList.toggle('menu-desplegado-ordenar')
-        btnFlotante.classList.toggle('margin-negativo-dinamic-ordenar-span')
+        menuFlotante.classList.contains('ocultar-icon') ? menuFlotante.classList.remove('ocultar-icon') : menuFlotante.classList.add('ocultar-icon')
+        btnElement.classList.contains('menu-desplegado-ordenar') ? btnElement.classList.remove('menu-desplegado-ordenar') : btnElement.classList.add('menu-desplegado-ordenar')
+        btnFlotante.classList.contains('margin-negativo-dinamic-ordenar-span') ? btnFlotante.classList.remove('margin-negativo-dinamic-ordenar-span') : btnFlotante.classList.add('margin-negativo-dinamic-ordenar-span')
+
+        menuFlotante.classList.contains('ocultar-icon') ? document.getElementById('root').classList.remove('abrimos-menu') : document.getElementById('root').classList.add('abrimos-menu')
 
         setTimeout(() => {
             if (btnElement.classList.contains('menu-desplegado-ordenar')) {

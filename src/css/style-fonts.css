@@ -4,31 +4,31 @@ Font Family
 ==============================
 */
 @font-face {
-    font-family: 'Basis';
-    src: url(fonts/basis-grotesque-light-pro.ttf);
+    font-family: 'Basic';
+    src: url(../css/fonts/basis-grotesque-light-pro.ttf);
     font-weight: 300;
 }
   
 @font-face {
-    font-family: 'Basis';
-    src: url(fonts/basis-grotesque-regular-pro.ttf);
+    font-family: 'Basic';
+    src: url(../css/fonts/basis-grotesque-regular-pro.ttf);
     font-weight: 400;
 }
   
 @font-face {
-    font-family: 'Basis';
-    src: url(fonts/basis-grotesque-medium-pro.ttf);
+    font-family: 'Basic';
+    src: url(../css/fonts/basis-grotesque-medium-pro.ttf);
     font-weight: 500;
 }
   
 @font-face {
-    font-family: 'Basis';
-    src: url(fonts/basis-grotesque-bold-pro.ttf);
+    font-family: 'Basic';
+    src: url(../css/fonts/basis-grotesque-bold-pro.ttf);
     font-weight: 600;
 }
 
 body {
-    font-family: 'Basis', sans-serif;
+    font-family: 'Basic', sans-serif;
     color: var(--color-green);
 }
 h1,
@@ -41,7 +41,7 @@ h2 a,
 h3 a,
 h4 a,
 h5 a {
-    font-family: 'Basis'!important;    
+    font-family: 'Basic'!important;    
 }
 
 p,
@@ -54,7 +54,7 @@ span,
 table,
 table tr,
 table tr td {
-    font-family: 'Basis'!important;
+    font-family: 'Basic'!important;
     font-size: 1em;
     font-weight: 400;
     letter-spacing: 0;
@@ -62,5 +62,5 @@ table tr td {
 }
 
 .ff-basis{
-    font-family: 'Basis'!important;
+    font-family: 'Basic'!important;
 }

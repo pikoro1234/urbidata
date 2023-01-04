@@ -1,7 +1,17 @@
 import {MapContainer, TileLayer, Marker, Popup} from 'react-leaflet'
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { useState } from "react";
+import { useState, useRef } from "react";
+import { useMapEvent } from "react-leaflet";
+
+function SetViewOnClick({ animateRef }) {
+    const map = useMapEvent('click', (e) => {
+      map.setView(e.latlng, map.getZoom(), {
+        animate: animateRef.current || false,
+      })
+    })  
+    return null
+}
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -14,6 +24,8 @@ L.Icon.Default.mergeOptions({
 const Mapa = (props) => {
         
     const [centerMapa, setCenterMapa] = useState([41.627645, 2.3373676])
+    const animateRef = useRef(false)
+    animateRef.current = !animateRef.current
 
     const changeDimensionMapa = () => {                               
         let colMapa = document.querySelector('.col-mapa')
@@ -30,7 +42,10 @@ const Mapa = (props) => {
     return ( 
         <>
             <div onClick={()=> changeDimensionMapa()} className="btn-toggle-expanded-mapa px-2 py-2">P</div>
-            <MapContainer fullscreenControl={true} center={centerMapa} zoom={13} scrollWheelZoom={false}>
+            <MapContainer                
+                fullscreenControl={true}
+                center={centerMapa} zoom={15}
+                scrollWheelZoom={false}>                                                                        
                 <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
                 {
                     props.jardineras.map((item, key) => ( 
@@ -38,7 +53,8 @@ const Mapa = (props) => {
                             <Popup>{item.id_jardinera} <br /> Easily customizable.</Popup>
                         </Marker>            
                     ))
-                }                                
+                }  
+                <SetViewOnClick animateRef={animateRef} />
             </MapContainer>
         </>
     );
